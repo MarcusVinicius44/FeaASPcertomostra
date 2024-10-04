@@ -92,12 +92,15 @@
         </form>
     </div>
     <script>    
-        18
         document.getElementById('contatoForm').addEventListener('submit', function (event) {
             const telefone = document.getElementById('telefone').value;
             const cnpj = document.getElementById('cnpj').value;
-            if (cnpj.length > 18 || cnpj.length < 18)
-            if (telefone.length > 15 || telefone.length < 15) {
+            if (cnpj.length > 18 || cnpj.length < 18) {
+                event.preventDefault();
+                alert('O CNPJ necessita de 14 caracteres.');
+                return false;
+            }
+            else if(telefone.length > 15 || telefone.length < 15) {
                 event.preventDefault();
                 alert('O número de telefone necessita de 11 caracteres.');
                 return false;
