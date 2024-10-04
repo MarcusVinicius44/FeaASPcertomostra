@@ -1,0 +1,58 @@
+﻿.work-section-wrapper {
+    margin-top: 15rem;
+}
+
+.work-section-top p {
+    text-align: center;
+    max-width: 600px !important;
+}
+
+.work-section-top h1 {
+    max-width: 700px !important;
+}
+
+.work-section-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.work-section-bottom {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Alinhamento para ocupar a mesma altura */
+    flex-wrap: wrap;
+}
+
+.work-section-info {
+    width: 300px;
+    min-height: 400px; /* Mantém a altura mínima para uniformidade */
+    background-color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Para distribuir o espaço corretamente */
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    color: #505050;
+    margin: 1rem 2rem;
+    transition: transform 0.3s ease; /* Transição suave para transformação */
+}
+
+    .work-section-info h2 {
+        margin: 1rem 0rem;
+    }
+
+    .work-section-info p {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        margin: 0;
+    }
+    .work-section-info:hover {
+        transform: scale(1.05); /* Aumenta o tamanho do card em 5% ao passar o mouse */
+    }
