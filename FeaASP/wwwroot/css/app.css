@@ -164,6 +164,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 
     .secondary-button svg {
@@ -545,6 +546,6 @@ footer {
     }
 }
 
-.momorado {
+.btsejaparceiro {
     text-decoration: none;
 }
