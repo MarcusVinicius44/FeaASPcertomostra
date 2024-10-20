@@ -1,0 +1,87 @@
+﻿ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEA</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/app.css" asp-append-version="true" />
+
+</head>
+<body>
+    <div class="content-wrapper">
+        <header>
+            <nav>
+                <div class="nav-logo-container">
+                    <a href="/Index"><img src="~/Imagens/fotologo2.png" alt="Logo"></a>
+                </div>
+                <div class="navbar-links-container">
+                    <a href="/Index">Home</a>
+                    <a href="/eventos">Eventos</a>
+                    <a href="/Contato">Contato</a>
+                    <a href="/Coleta">Pontos de coleta</a>
+                    <a href="/receitas">Receitiliza</a>
+                    <a href="/Nossospcr">Nossos Parceiros</a>
+                    <!--<button class="primary-button">
+                        <a href="/Login">Login</a>
+                    </button>-->
+                </div>
+            </nav>
+        </header>
+
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="~/Imagens/fotologo2.png" alt="Logo" style="width: 100px; height: auto;"> <!-- Ajuste o caminho e o tamanho -->
+            </div>
+            <div class="footer-section">
+                <h3>Sobre Nós</h3>
+                <ul>
+                    <li><a href="/Index">Quem somos</a></li>
+                    <li><a href="/eventos">Eventos </a></li>
+                    <li><a href="/Coleta">Pontos de Coleta</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><a href="/Contato">Fale Conosco</a></li>
+                    <li><a href="/Seja-parceiro">Seja parceiro</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Nossos Parceiros</h3>
+                <ul>
+                    <li><a href="/Nossospcr">Nossos Parceiros</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Receitas</h3>
+                <ul>
+                    <li><a href="/receitas">Receitiliza</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>©2024. Food Expiration Application Web. Tv. Teódulo de Albuquerque, 196 - Cabula VI, Salvador - BA, 41181-010. Criação de sites.</p>
+            <div class="footer-contact">
+                <p>Email: <a href="mailto:feafoodweb@gmail.com">feafoodweb@gmail.com</a> | Telefone: <a href="tel:+5571986507332">(71) 98650-7332</a></p>
+            </div>
+            <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
